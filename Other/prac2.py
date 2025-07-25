@@ -202,10 +202,23 @@
 # ////////////////////////////// update and intersection ///////////
 
 set1 = {1, 2, 3, 4, 6}
-set2 = {6, 7, 8, 9}
+set2 = [6, 7, 8, 9]
 
 # set3 = set1.intersection(set2)  # {6}
 # print(set3)
 
-set3 = set1.difference(set2)  # {1, 2, 3, 4}
+# set3 = set1.difference(set2)  # {1, 2, 3, 4}
+# print(set3)
+
+# set3 = set1.symmetric_difference(set2)
+# print(set3)
+
+# set3 = set1.union(set2)
+# print(set3)
+
+# ///////////////////////// difference ////////////////////
+
+set1 = {1, 2, 3, 4, 6}
+set2 = [6, 7, 8, 9]
+set1 = set1 - set2
 print(set3)
