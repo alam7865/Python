@@ -90,27 +90,47 @@
 # //////////////////////////////// Hybroid /////////////////////////////
 
 
-class Animal:
-    def eat(self):
-        print("Animal Eats")
+# class Animal:
+#     def eat(self):
+#         print("Animal Eats")
 
 
-class Bird(Animal):
-    def fly(self):
-        print("They fly in Sky")
+# class Bird(Animal):
+#     def fly(self):
+#         print("They fly in Sky")
 
 
-class Mammal(Animal):
-    def birth(self):
-        print("They Give Birth")
+# class Mammal(Animal):
+#     def birth(self):
+#         print("They Give Birth")
 
 
-class Bat(Bird, Mammal):
-    def sleep(self):
-        print("They Sleep Upside Down")
+# class Bat(Bird, Mammal):
+#     def sleep(self):
+#         print("They Sleep Upside Down")
 
 
-b1 = Bat()
-b1.birth()
-b1.fly()
-b1.eat()
+# b1 = Bat()
+# b1.birth()
+# b1.fly()
+# b1.eat()
+
+
+# //////////////////////////////// Super ///////////////////////
+
+# class Animal:
+#     def eat(self):
+#         print("They Eats")
+
+
+# class Dog(Animal):
+#     def walk(self):
+#         super().eat()
+#         print("They Live in land")
+
+
+# d1 = Dog()
+# d1.walk()
+
+
+# /////////////////////////////////////////////////////////////////
