@@ -77,3 +77,113 @@ list1 = ["apple", "mango", "orange", "grapes", "papaya", "pppp"]
 
 # print(shallow)
 # print(deep)
+
+
+# ///////////////////////////////////////////////////////// Lambda Function ////////////////////////////////
+
+# x = lambda x: x + 5
+
+# print(x(5))
+
+
+# x = lambda x, y: x + y
+
+# print(x(5, 5))
+
+
+# ////////////////////////////////////////////////////////////////////
+
+# dict1 = {1: "apple"}
+# # print(dict1.get(1))
+
+# # /////////// Add
+
+# dict1[2] = "Mango"
+# dict1[4] = "Orange"
+
+# print(dict1.get(1))
+# print(dict1[10])
+
+# # /////////////// get
+
+# print(dict1[2])
+
+# # ////////////// update
+# dict1[1] = "Sabaz"
+
+# # //////////// delete
+# del dict1[1]
+# print(dict1)
+
+
+# //////////////////////// Dictionary with mixed ////////////
+# dict1 = {
+#     1: "apple",
+#     2: "Mango",
+#     "place": ("Assam", "Bihar", "Hydrabad"),
+#     "even": [2, 4, 6, 8],
+#     "job": {1: "It", 2: "Doctor", 3: "Teacher"},
+#     "country": ["India", "America", "Nepal", "Bangladesh"],
+# }
+
+
+# print(dict1["place"][1])  # Bihar
+# print(dict1["even"][0])  # 2
+# print(dict1["job"][2])  # Doctor
+# print(dict1["country"][0])  # India
+
+
+# set1 = {"apple", "mango", "Orange"}
+# print(set1.get(0))
+
+
+# //////////////////////////////////////////////////////////
+
+# set1 = {1, 2, 3, 4, 5, 6}
+# set1.remove(6)
+# print(set1)
+
+
+# ///////////////////////////////////////////////////////////
+
+
+# class Student:
+#     def __init__(self, name, marks):
+#         self.name = name
+#         self.marks = marks
+
+#     def showDetails(self):
+#         print("Name: ", self.name, " ", self.marks)
+
+#     def showAgv(self):
+#         sum = 0
+#         for x in self.marks:
+#             sum += x
+
+#         print("Average: ", sum / 3)
+
+
+# s1 = Student("Sabaz Alam", [55, 66, 77])
+# s1.showDetails()
+# s1.showAgv()
+
+
+# /////////////////////////////////////////
+
+
+def div(a, b):
+    print(a / b)
+
+
+def smart_div(func):
+    def inner(a, b):
+        if a < b:
+            a, b = b, a
+        return func(a, b)
+
+    return inner
+
+
+div = smart_div(div)
+
+div(4, 2)
