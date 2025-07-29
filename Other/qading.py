@@ -223,3 +223,50 @@ dict1.update(dict2)
 # IsPrime(6)
 
 # 2) Other Way
+
+
+# def IsPrime(num):
+#     x = int(num**0.5) + 1
+#     i = 0
+#     for x in range(2, x):
+#         if num % x == 0:
+#             i = 1
+#             print("False Not Prime")
+
+#     if i == 0:
+#         print("Prime")
+
+
+# IsPrime(10)
+
+
+# ///////////////////////////////////////////////// Fizz Buzz /////////////////////
+
+print("Hello World")
+
+if __name__ == "__main__":
+
+    def FizzBuzz(num):
+        for x in range(1, num + 1):
+
+            if x % 3 == 0 and x % 5 == 0:
+                print(f"{x} --> FizzBuzz")
+            elif x % 3 == 0:
+                print(f"{x} --> Fizz")
+            elif x % 5 == 0:
+                print(f"{x} --> Buzz")
+
+    FizzBuzz(15)
+
+# if __name__ == "__main__":
+
+#     def FizzBuzz(num):
+#         for x in range(1, num + 1):
+#             if x % 3 == 0 and x % 5 == 0:
+#                 print(f"{x} --> FizzBuzz")
+#             elif x % 3 == 0:
+#                 print(f"{x} --> Fizz")
+#             elif x % 5 == 0:
+#                 print(f"{x} --> Buzz")
+
+#     FizzBuzz(15)
