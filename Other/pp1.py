@@ -39,5 +39,21 @@
 #     print(index, list1)
 
 # ///////////////////// Lambda
+# x = lambda x: x + 5
+# print(x(5))
+
+# str = "sabaz"
+# print(str[0:])
+
+# list1 = [1, 2, 3, 4, 5]
+# list1[0] = 100
+# # newList = list1.copy()
+# # print(newList)
+
+# newList = list(list1)
+# print(newList)
+
+
+# //////////////////// lambda function //////////////
 x = lambda x: x + 5
 print(x(5))
