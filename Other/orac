@@ -1,0 +1,7 @@
+create table tt ( sno number (2), name varchar2 (10) );
+
+insert into tt values (1, 'Sabaz');
+
+insert into tt values (2, 'KK');
+
+select * from tt;
