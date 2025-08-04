@@ -212,7 +212,152 @@ items = ["apple", "mango", "orange"]
 # Capatalized(str)
 
 # ///////////////////// merge two dictionary //////////////////////
-dict1 = {1: "apple", 2: "mango", 3: "orange"}
-dict2 = {4: "grapes", 5: "banana", 6: "Kiwi"}
-dict3 = dict1.update(dict2)
-print(dict3)
+# dict1 = {1: "apple", 2: "mango", 3: "orange"}
+# dict2 = {4: "grapes", 2: "Sabaz", 6: "Kiwi"}
+
+# dict3 = {**dict1, **dict2}
+# print(dict3)
+
+
+# dict3 = dict1.update(dict2)
+# print(dict3)
+
+# for x in dict2:
+#     # print(x, dict2[x])
+#     dict1[x] = dict2[x]
+
+# print(dict1)
+
+
+# ///////////////////////// operation on dictionary
+
+dict1 = {}
+
+# add in dictionary
+dict1[1] = "apple"
+dict1[2] = "Orange"
+dict1[3] = "Mango"
+dict1[4] = "Grapes"
+
+# print(dict1)
+
+# ////////////////////// traversing in dict1
+# for x in dict1:
+#     print(x, dict1[x])
+
+# /////////////////////// updating key value pairs
+dict1[4] = "Sabaz Alam"
+
+# print(dict1)
+
+
+# ////////////////////// iterate in dict1
+
+# for key in dict1.keys():
+#     print(key)
+
+
+# for value in dict1.values():
+#     print(value)
+
+# for key, value in dict1.items():
+#     print(key, value)
+
+
+# /////////////////////// control flow and logic ////////////////////////
+
+# //// check even or odd
+
+
+# def checkNum(num):
+#     if num % 2 == 0:
+#         print(f"{num} Is Even Number")
+#     else:
+#         print(f"{num} Is Odd Number")
+
+
+# checkNum(21)
+
+# //// factorial using iteration
+
+
+# def factorial(num):
+#     # for x in range(num, 1):
+#     #     print(x)
+#     res = 1
+#     while num != 0:
+#         res *= num
+#         num -= 1
+#     print(res)
+
+
+# factorial(5)
+
+
+# //// factorial using recursion
+# def factorial(num):
+#     if num == 1:
+#         return num
+
+#     return num * factorial(num - 1)
+
+
+# print(factorial(5))
+
+
+# ///// fibonacchi number
+
+
+# def fibonacchi(num):
+#     if num == 1:
+#         print(1)
+#     elif num == 2:
+#         print(0, 1)
+#     else:
+#         print(0, end=" ")
+#         print(1, end=" ")
+#         num -= 2
+#         a = 0
+#         b = 1
+
+#         while num > 0:
+#             c = a + b
+#             print(c, end=" ")
+#             a = b
+#             b = c
+#             num -= 1
+
+# fibonacchi(5)
+
+# //////// check prime
+
+
+# def isPrime(num):
+#     x = int(num**0.5)
+#     i = 2
+#     isprime = 1
+#     while i <= x:
+#         if num % i == 0:
+#             print(f"{num} Not Prime")
+#             isprime = 0
+#             break
+#         i += 1
+#     if isprime == 1:
+#         print(f"{num} is Prime")
+
+
+# isPrime(6)
+
+
+# ///////////////////// function
+def sum(num):
+    sum = 0
+    i = 1
+
+    while i <= num:
+        sum += i
+        i += 1
+    return sum
+
+
+print(sum(5))
