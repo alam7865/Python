@@ -350,14 +350,56 @@ dict1[4] = "Sabaz Alam"
 
 
 # ///////////////////// function
-def sum(num):
-    sum = 0
-    i = 1
+# def sum(num):
+#     sum = 0
+#     i = 1
 
-    while i <= num:
-        sum += i
-        i += 1
-    return sum
+#     while i <= num:
+#         sum += i
+#         i += 1
+#     return sum
 
 
-print(sum(5))
+# print(sum(5))
+
+
+# ////////////////////////////////////////// dictionary Operation
+# dict1 = {}
+
+# # add
+# dict1[1] = "apple"
+# dict1[2] = "Mango"
+# dict1[3] = "Orange"
+
+# # update
+# dict1[1] = "Sabaz"
+
+# ////delete
+# del dict1[1]
+
+# print(dict1.get(3))
+
+# /// Iterate
+# print(dict1)
+
+# for x in dict1:
+#     print(x, dict1[x])
+
+
+# for x in dict1.keys():
+#     print(x)
+
+# for x in dict1.values():
+#     print(x)
+
+
+# for key, value in dict1.items():
+#     print(key, value)
+
+# /////////////// Merge Two dictionary
+dict1 = {1: "apple", 2: "mango", 3: "Orange"}
+dict2 = {4: "papaya", 5: "Kiwi", 6: "Banana"}
+dict3 = dict1.copy()
+dict3.update(dict2)
+# dict3 = dict1 + dict2
+print(dict3)
