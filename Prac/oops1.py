@@ -88,3 +88,103 @@
 
 # sum = reduce(lambda x, y: x + y, list1)
 # print(sum)
+
+
+# //////////////////////////////////////////////////////////////////////////////
+
+# list1 = [1, 2, 3]
+
+# list2 = [4, 5, 6]
+# list3 = list(zip(list1, list2))
+
+# print(list3)
+
+
+# /////////////////////////////////////////////
+
+# list1 = [1, 2, 3, 4, 5]
+
+# # map
+# list2 = list(map(lambda x: x + 1, list1))
+# print(list2)
+
+# # Filter
+
+# list3 = list(filter(lambda x: x > 3, list1))
+# print(list3)
+
+# from functools import reduce
+
+# list4 = int(reduce(lambda x, y: x + y, list1))
+# print(list4)
+
+
+# ////////////////////////////////////////  try catch finally ////////////////////////////
+
+# try:
+#     a = int(input("Enter a Number 1"))
+#     b = int(input("Enter a Number 1"))
+#     print(a + b)
+
+# except:
+#     print("Some thing went wrong")
+# finally:
+#     print("Done")
+
+
+# def fun():
+#     pass
+
+
+# fun()
+
+
+# def gen():
+#     yield 1
+#     yield 2
+
+
+# gen()
+
+
+# ///////////////////////////////////////////////////////////////////////////////
+
+
+# class MyClass:
+#     class_var = "Hello"
+
+#     @staticmethod
+#     def static_method():
+#         print("I don’t need class or object.")
+
+#     @classmethod
+#     def class_method(cls):
+#         print("I can access:", cls.class_var)
+
+
+# # Usage
+# MyClass.static_method()  # Works without object
+# MyClass.class_method()
+
+
+# /////////////////////////
+# def my_gen():
+#     for i in range(3):
+#         yield i
+
+
+# for val in my_gen():
+#     print(val)
+
+
+# ///////////////////////////////////////////////// reverse a string ////////////////////
+str = "Hello Sabaz Alam"
+
+# str2 = str[::-1]
+# print(str2)
+
+# str2 = "".join(reversed(str))
+# print(str2)
+
+str3 = str[::-1]
+print(str3)
