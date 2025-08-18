@@ -27,7 +27,48 @@
 # arr[0] = prev
 # print(arr)
 
-# ///////////////////////////////////////////////////////////
-arr = [16, 17, 4, 3, 5, 2]
+# //////////////////////////////////////////////////////////////
 
-st = []
+# arr = [16, 17, 4, 3, 5, 2]
+# res = [16, 17, 4, 3, 5, 2]
+
+# st = []
+# st.append(-1)
+
+# for x in range(len(arr) - 1, -1, -1):
+#     pres = arr[x]
+
+#     if arr[x] >= st[-1]:
+#         while st and arr[x] > st[-1]:
+#             st.pop()
+
+#     if st:
+#         arr[x] = st[-1]
+#     else:
+#         arr[x] = -1
+
+#     st.append(pres)
+
+
+# print(arr)
+
+
+# /////////////////////////////////////////////////////////////////////////////////
+str = "testsample"
+maxFreq = -1
+maxchar = "z"
+dict1 = {}
+
+for x in range(len(str)):
+    dict1[str[x]] = dict1.get(str[x], 0) + 1
+    maxFreq = max(maxFreq, dict1.get(str[x]))
+
+
+for key, value in dict1.items():
+    if maxFreq == value:
+        or1 = ord(key)
+        or2 = ord(maxchar)
+        if or1 < or2:
+            maxchar = key
+
+print(maxFreq, maxchar)
