@@ -397,9 +397,39 @@ dict1[4] = "Sabaz Alam"
 #     print(key, value)
 
 # /////////////// Merge Two dictionary
-dict1 = {1: "apple", 2: "mango", 3: "Orange"}
-dict2 = {4: "papaya", 5: "Kiwi", 6: "Banana"}
-dict3 = dict1.copy()
-dict3.update(dict2)
-# dict3 = dict1 + dict2
-print(dict3)
+
+# dict1 = {1: "apple", 2: "mango", 3: "Orange"}
+# dict2 = {4: "papaya", 5: "Kiwi", 6: "Banana"}
+# dict3 = dict1.copy()
+# dict3.update(dict2)
+# # dict3 = dict1 + dict2
+# print(dict3)
+
+
+# ////////////////////////////////////////////////////////////////////////
+
+# list = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+
+# for index, items in enumerate(list):
+#     print(index, items)
+
+
+# ///////////////////////////////////////////////////////////////////////
+
+
+def div(a, b):
+    print(a / b)
+
+
+def smartdev(func):
+    def inner(a, b):
+        if a < b:
+            a, b = b, a
+        return func(a, b)
+
+    return inner
+
+
+div = smartdev(div)
+
+div(2, 4)
